@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+           ::placeholder{
+            font-size: 20px;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: sans-serif;
+        }
+       
+        .drop{
+            position: relative;
+            margin-left: 86%;
+        }
+        .drop-c{
+            position: absolute;
+            display: none;
+        }
+        .drop:hover .drop-c{
+            display: block;
+        }
+        @keyframes fab{
+            0%{transform: rotate(0deg);}
+            100%{transform: rotate(360deg);}
+        }
+      
+    </style>
+</head>
+<body>
+    <div class="modes" style="width: 100%; height: 80px; background-color: rgb(0, 0, 0); display: flex; justify-content: space-between;">
+        <li style="list-style: none;"><a style="color: white; text-decoration: none; margin-top: 40px; font-size: 30px;" href="loading.html">Free modes</a></li>
+        <li style="list-style: none;"><a style="color: white; text-decoration: none; margin-top: 40px; font-size: 30px;" href="loading.html">Data Modes</a></li>
+        
+    </div>
+    <div class="header" >
+        <div class="loader" style="border: 20px solid rgb(231, 218, 218); border-top: 20px solid blue; animation-name: fab; animation-direction: alternate-reverse; animation-iteration-count: infinite; animation-duration: 2s; position: absolute; border-radius: 50%; margin-left: 30%; width: 50px; height: 50px;"></div>
+        
+        <div style="display: flex; float: right;">
+            <li style="list-style: none;"><a href="home.html" style=" font-size: 30px; padding: 10px; text-decoration: none; color: black;">Home</a></li style="list-style: none;">
+            
+            <li style="list-style: none;"><a href="help.html" style="color: black;  text-decoration: underline rebeccapurple 5px; font-size: 30px; padding: 10px;">Help</a></li>
+            <li style="list-style: none;"><a href="news.html" style="color: black;  font-size: 30px; padding: 10px; text-decoration: none;">News</a></li>
+            <li style="list-style: none;"><a href="photos.html" style="color: black; text-decoration: none; font-size: 30px; padding: 10px;">photos</a></li>
+        </div>
+       
+            
+
+        <h1 style="color: green; font-family: fantasy; font-family: 600;">Shop</h1>
+        
+    </div>
+    <hr>
+    <hr>
+   
+    </div>
+    <div class="drop" style="position: absolute;">
+        <h1 style="color: white; background-color: blue; width: 160px; padding: 10px;">Buy Others</h1>
+        <div class="drop-c">
+        <div  style="display: flex; flex-direction: column;">
+            <button style="background-color: blueviolet; border: thin; margin-bottom: 10px; border-radius: 2px; width: 200px; height: 50px; "><a href="loading.html" style="text-decoration: none; color: white;">Suit</a></button>
+            <button style="background-color: blueviolet; height: 50px; border: thin; margin-bottom: 10px; border-radius: 2px; width: 200px; "><a href="loading.html" style="text-decoration: none; color: white;">Airplane</a></button>
+            <button style="background-color: blueviolet; height: 50px; border: thin; margin-bottom: 10px; border-radius: 2px; width: 200px; "><a href="loading.html" style="text-decoration: none; color: white;">Machine Gun</a></button>
+            <button style="background-color: blueviolet; height: 50px; border: thin; margin-bottom: 10px; border-radius: 2px; width: 200px; "><a href="loading.html" style="text-decoration: none; color: white;">Airplane</a></button>
+            <button style="background-color: blueviolet; height: 50px; border: thin; margin-bottom: 10px; border-radius: 2px; width: 200px; "><a href="loading.html" style="text-decoration: none; color: white;">Tanks</a></button>
+            <button style="background-color: blueviolet; height: 50px; border: thin;margin-bottom: 10px; border-radius: 2px; width: 200px; "><a href="loading.html" style="text-decoration: none; color: white;">Soap</a></button>
+            <button style="background-color: blueviolet; height: 50px; border: thin; margin-bottom: 10px; border-radius: 2px; width: 200px; "><a href="loading.html" style="text-decoration: none; color: white;">Juice</a></button>
+            <button style="background-color: blueviolet; height: 50px; border: thin; margin-bottom: 10px; border-radius: 2px; width: 200px; "><a href="loading.html" style="text-decoration: none; color: white;">Flash</a></button>
+
+        </div>
+    </div>
+    </div>
+    <div>
+        <button id="button"  onclick="display()" style="border: thin; background-color: transparent;">
+           <div style="width: 50px; height: 10px; background-color: black; margin-bottom: 5px;"></div>
+           <div style="width: 50px; height: 10px; background-color: black; margin-bottom: 5px;"></div>
+           <div style="width: 50px; height: 10px; background-color: black; margin-bottom: 5px;"></div>
+   
+        </button>
+        <button id="button1"  onclick="display1()" style="border: thin; background-color: transparent; transform: rotate(90deg); display: none;">
+           <div style="width: 50px; height: 10px; background-color: black; margin-bottom: 5px;"></div>
+           <div style="width: 50px; height: 10px; background-color: black; margin-bottom: 5px;"></div>
+           <div style="width: 50px; height: 10px; background-color: black; margin-bottom: 5px;"></div>
+   
+        </button>
+        <div id="items" style="line-height: 2; position: fixed; background-color: black; transform: translate(-800px); transition: 1s ease-in-out; width: 300px; height: 300px;">
+           <li style="list-style: none;"><a href="home.html" style=" font-size: 30px; padding: 10px; text-decoration: none; color: white;">Home</a></li style="list-style: none;">
+       
+               <li style="list-style: none;"><a href="help.html" style="color: rgb(241, 241, 241); text-decoration: none; font-size: 30px; padding: 10px;">Help</a></li>
+               <li style="list-style: none;"><a href="news.html" style="color: rgb(255, 255, 255); text-decoration: none; font-size: 30px; padding: 10px;">News</a></li>
+               <li style="list-style: none;"><a href="photos.html" style="color: rgb(255, 255, 255); text-decoration: none; font-size: 30px; padding: 10px;">photos</a></li>
+        </div>
+   </div>
+   <script>
+       function display(){
+           document.getElementById("items").style.transform = 'translate(0px)';
+           document.getElementById("button").style.display = 'none';
+           document.getElementById("button1").style.display = 'block'
+       }
+       function display1(){
+           document.getElementById("items").style.transform = 'translate(-800px)';
+           document.getElementById("button1").style.display= 'none';
+           document.getElementById('button').style.display = 'block';
+       }
+   </script>
+          <div style="margin-left: 30%; margin-bottom: 5; display: flex; border: thin solidb transparent;">
+    <input type="text" placeholder="Search Goods you want.." style="padding: 30px; width: 300px; border: 2px solid black; border-radius: 20px;">
+    <button style="font-size: 30px; background-color: blue; border: thin; margin-top: 10px; margin-left: 3px; height: 60px; border-radius: 5px;"><a href="loading.html" style="color: white; text-decoration: none;">Search</a></button>
+</div>
+<h1>How Can we help You ?</h1>
+<input type="text" style=" width: 300px; padding: 40px; margin-left: 2%; border-radius: 20px;  " autofocus >
+<button style="background-color: red; border: thin; padding: 40px; border-radius: 20px;"><a href="loading.html" style="text-decoration: none; color: white;">Send your Question</a></button>
+<div>
+    <p style="font-size: 20px; text-decoration: overline .02px rgb(228, 215, 215);">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus nesciunt tenetur dolore iusto quidem tempora quasi at? Incidunt corporis amet aut quasi minus, sint, eveniet quos cum, quae iure libero!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, aliquam natus soluta dolor eveniet cum voluptate at ab placeat labore mollitia impedit, voluptates dolorem molestiae? Consequuntur numquam animi eius quam.
+    </p>
+    <div style="display: flex;">
+    <img src="./best images/chinese.jpg" alt="" width="400px">
+    <img src="./best images/1339287.jpg" alt="" width="400px">
+   <img src="./best images/122666-free-wallpapers-for-windows-10-2560x1600-for-1080p.jpg" alt="" width="400px">
+</div>
+<div>
+    <p style="font-size: 20px; font-family: cursive;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus nesciunt tenetur dolore iusto quidem tempora quasi at? Incidunt corporis amet aut quasi minus, sint, eveniet quos cum, quae iure libero!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, aliquam natus soluta dolor eveniet cum voluptate at ab placeat labore mollitia impedit, voluptates dolorem molestiae? Consequuntur numquam animi eius quam.
+    </p>
+    <div style="display: flex;">
+    <img src="./best images/3D-Tree-Fantasy-Full-HD-Image.jpg" alt="" width="400px">
+    <img src="./best images/655512-gaming-wallpaper-2560x1440-2560x1440-smartphone.jpg" alt="" width="400px">
+   <img src="./best images/15859.jpg" alt="" width="400px">
+</div>
+
+</div>
+<div style="width: 100%; height: 60px; background-color: blue; padding: 30px; text-align: center;"><a style="color: white; text-decoration: none;" href="loading.html">Continue with other Helps</a></div>
+<p style="font-size: 20px; font-family: cursive;">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic adipisci et soluta neque sunt dolore animi, autem esse possimus dolorum deleniti? Libero assumenda tenetur porro consequuntur. Libero repellendus distinctio totam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis iusto voluptates, quam a qui numquam, perspiciatis dolore corrupti pariatur nulla quisquam doloremque veritatis magnam ipsam ab voluptatibus quasi. Praesentium, molestiae.
+</p>
+<div style="display: flex;">
+<img src="./best images/chinese.jpg" alt="" width="400px" height="300px">
+<img src="./best images/127918-beautiful-1080p-gaming-wallpapers-1920x1080-for-android-tablet.jpg" alt="" height="300px">
+<img src="./best images/316707.jpg" alt="" width="400px" height="300px">
+</div>
+<p style="font-size: 20px; font-family: cursive;">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic adipisci et soluta neque sunt dolore animi, autem esse possimus dolorum deleniti? Libero assumenda tenetur porro consequuntur. Libero repellendus distinctio totam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis iusto voluptates, quam a qui numquam, perspiciatis dolore corrupti pariatur nulla quisquam doloremque veritatis magnam ipsam ab voluptatibus quasi. Praesentium, molestiae.
+</p>
+<div style="display: flex;">
+<img src="./best images/1675528-keyboard-wallpaper.jpg" alt="" width="400px" height="300px">
+<img src="./best images/851545-wallpaper-pc-desktop-3840x2160-mobile.jpg
+" alt="" height="300px">
+<img src="./best images/HD-wallpaper-portrait-display-artwork-digital-art-warrior-red-background-samurai-armor-katana-sword-thumbnail.jpg" alt="" width="400px" height="300px">
+</div>
+<p style="font-size: 20px; font-family: cursive;">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic adipisci et soluta neque sunt dolore animi, autem esse possimus dolorum deleniti? Libero assumenda tenetur porro consequuntur. Libero repellendus distinctio totam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis iusto voluptates, quam a qui numquam, perspiciatis dolore corrupti pariatur nulla quisquam doloremque veritatis magnam ipsam ab voluptatibus quasi. Praesentium, molestiae.
+</p>
+<div style="display: flex;">
+<img src="./best images/122666-free-wallpapers-for-windows-10-2560x1600-for-1080p.jpg" alt="" width="400px" height="300px">
+<img src="./best images/chinese.jpg" alt="" height="300px">
+<img src="./best images/316707.jpg" alt="" width="400px" height="300px">
+</div>
+<footer style="column-count: 3; background-color: black;">
+    <div style="color: white;"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis reprehenderit at, exercitationem similique quia dolore iure ab voluptate sapiente. Tenetur qui vitae sint ut incidunt enim laborum ullam eum quisquam?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ratione consectetur itaque modi, assumenda porro molestiae? Velit vero temporibus minus autem repellat ab dolores, vel maiores culpa, laborum delectus obcaecati.
+    </i></div>
+    <div style="color: white;"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis reprehenderit at, exercitationem similique quia dolore iure ab voluptate sapiente. Tenetur qui vitae sint ut incidunt enim laborum ullam eum quisquam?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ratione consectetur itaque modi, assumenda porro molestiae? Velit vero temporibus minus autem repellat ab dolores, vel maiores culpa, laborum delectus obcaecati.
+    </i></div>
+    <div style="color: white;"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis reprehenderit at, exercitationem similique quia dolore iure ab voluptate sapiente. Tenetur qui vitae sint ut incidunt enim laborum ullam eum quisquam?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ratione consectetur itaque modi, assumenda porro molestiae? Velit vero temporibus minus autem repellat ab dolores, vel maiores culpa, laborum delectus obcaecati.
+    </i></div>
+   
+</footer>
+<button style="width: 100%; padding: 100px; background-color: rgb(49, 4, 4);"><a href="home.html" style="color: white; text-decoration: none; font-size: 40px;">Back_to_top</a></button>
+   
+</body>
+</html>

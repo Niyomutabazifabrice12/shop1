@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fontawesome-free-6.5.1-web/fontawesome-free-6.5.1-web/css/all.css">
+    <style>
+       
+        ::placeholder{
+            font-size: 20px;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: sans-serif;
+        }
+        .animation{
+            animation-name: anime;
+            animation-duration: 10s;
+            animation-iteration-count: 1;
+            position: absolute;
+        }
+        .drop{
+            position: relative;
+            margin-left: 86%;
+        }
+        .drop-c{
+            position: absolute;
+            display: block;
+        }
+        .drop:hover .drop-c{
+            display: block;
+        }
+        @keyframes fab{
+            0%{transform: rotate(0deg);}
+            100%{transform: rotate(360deg);}
+        }
+        @keyframes anime{
+            0%{background-color: red;; left: 0; top: 400;}
+            10%{background-color: red; transform: rotate(90deg); left: 400px; top: 0;}
+            20%{background-color: rgb(0, 97, 187);  left: 400px; top: 200px;}
+            30%{background-color: rgb(0, 255, 149);  left: 0; top: 200px;}
+            40%{background-color: rgb(234, 0, 255);  left: 0; top: 0;}
+            50%{background-color: rgb(0, 255, 149);  left: 300px; top: 200px;}
+            60%{background-color: rgb(255, 0, 119);  left: 0; top: 200px;}
+            100%{background-color: rgb(255, 153, 0);  left: 400px; top: 0; display: none;}
+
+        }
+    </style>
+</head>
+<body>
+    <div class="modes" style="width: 100%; height: 80px; background-color: rgb(0, 0, 0); display: flex; justify-content: space-between;">
+        <li style="list-style: none;"><a style="color: white; text-decoration: none; margin-top: 40px; font-size: 30px;" href="loading.html">Free modes</a></li>
+        <button onclick="this.innerHTML=Date()" style="background-color: rgb(49, 44, 44); color: white; width: 100px;">See Date</button>
+        <li style="list-style: none;"><a style="color: white; text-decoration: none; margin-top: 40px; font-size: 30px;" href="loading.html">Data Modes</a></li>
+        
+    </div>
+    <div class="header" >
+        <div class="loader" style="border: 20px solid rgb(231, 218, 218); border-top: 20px solid blue; animation-name: fab; animation-direction: alternate-reverse; animation-iteration-count: infinite; animation-duration: 2s; position: absolute; border-radius: 50%; margin-left: 20%; width: 100px; height: 100px;"></div>
+        
+        <div class="header-nav" style="display: flex; float: right;">
+            <li style="list-style: none;"><a href="home.html" style="text-decoration: underline rebeccapurple 5px; font-size: 30px; padding: 10px;"><i class="fa fa-home"></i> Home</a></li style="list-style: none;">
+            
+            <li style="list-style: none;"><a href="help.html" style="color: black; text-decoration: none; font-size: 30px; padding: 10px;"><i class="	fas fa-check-circle"></i> Help</li>
+            <li style="list-style: none;"><a href="news.html" style="color: black; text-decoration: none; font-size: 30px; padding: 10px;"> <i class="	fa fa-cc-mastercard"></i>News</a></li>
+            <li style="list-style: none;"><a href="photos.html" style="color: black; text-decoration: none; font-size: 30px; padding: 10px;"> <i class="	fas fa-camera"></i>photos</a></li>
+        </div>
+       
+            
+
+        <h1 style="color: green; font-family: fantasy; font-family: 600;">Shop</h1>
+        
+    </div>
+    <hr>
+    <hr>
+    <div class="animation" style="width: 150px; height: 100px; margin-top: 50px; background-color: blue; border-radius: 10px; text-align: center; ">
+        <p style="font-size: 20px; font-family: sans-serif; color: white;">
+        WEll Come <br>to fab shop <br> website 
+       
+    </p>
+    </div>
+    <div class="drop" style="position: absolute;">
+        <h1 style="color: white; background-color: blue; width: 160px; padding: 10px;">Buy Others</h1>
+        <div class="drop-c">
+        <div  style="display: flex; flex-direction: column;">
+            <button style="background-color: blueviolet; border: thin; margin-bottom: 10px; border-radius: 2px; width: 200px; height: 150px; "><a href="loading.html" style="text-decoration: none; color: white;">Suit</a></button>
+            <button style="background-color: blueviolet; height: 150px; border: thin; margin-bottom: 10px; border-radius: 2px; width: 200px; "><a href="loading.html" style="text-decoration: none; color: white;">Airplane</a></button>
+            <button style="background-color: blueviolet; height: 150px; border: thin; margin-bottom: 10px; border-radius: 2px; width: 200px; "><a href="loading.html" style="text-decoration: none; color: white;">Machine Gun</a></button>
+            <button style="background-color: blueviolet; height: 150px; border: thin; margin-bottom: 10px; border-radius: 2px; width: 200px; "><a href="loading.html" style="text-decoration: none; color: white;">Airplane</a></button>
+            <button style="background-color: blueviolet; height: 150px; border: thin; margin-bottom: 10px; border-radius: 2px; width: 200px; "><a href="loading.html" style="text-decoration: none; color: white;">Tanks</a></button>
+            <button style="background-color: blueviolet; height: 150px; border: thin;margin-bottom: 10px; border-radius: 2px; width: 200px; "><a href="loading.html" style="text-decoration: none; color: white;">Soap</a></button>
+            <button style="background-color: blueviolet; height: 150px; border: thin; margin-bottom: 10px; border-radius: 2px; width: 200px; "><a href="loading.html" style="text-decoration: none; color: white;">Juice</a></button>
+            <button style="background-color: blueviolet; height: 150px; border: thin; margin-bottom: 10px; border-radius: 2px; width: 200px; "><a href="loading.html" style="text-decoration: none; color: white;">Flash</a></button>
+            <button style="background-color: blueviolet; height: 150px; border: thin;margin-bottom: 10px; border-radius: 2px; width: 200px; "><a href="loading.html" style="text-decoration: none; color: white;">House</a></button>
+            <button style="background-color: blueviolet; height: 150px; border: thin; margin-bottom: 10px; border-radius: 2px; width: 200px; "><a href="loading.html" style="text-decoration: none; color: white;">website</a></button>
+            <button style="background-color: blueviolet; height: 150px; border: thin; margin-bottom: 10px; border-radius: 2px; width: 200px; "><a href="loading.html" style="text-decoration: none; color: white;">Tv</a></button>
+
+            <button style="background-color: blueviolet; height: 150px; border: thin; margin-bottom: 10px; border-radius: 2px; width: 200px; "><a href="loading.html" style="text-decoration: none; color: white;">food</a></button>
+            <button style="background-color: blueviolet; height: 150px; border: thin; margin-bottom: 10px; border-radius: 2px; width: 200px; "><a href="loading.html" style="text-decoration: none; color: white;">Table</a></button>
+
+        </div>
+    </div>
+    </div>
+ <div>
+     <button id="button"  onclick="display()" style="border: thin; background-color: transparent;">
+        <div style="width: 50px; height: 10px; background-color: black; margin-bottom: 5px;"></div>
+        <div style="width: 50px; height: 10px; background-color: black; margin-bottom: 5px;"></div>
+        <div style="width: 50px; height: 10px; background-color: black; margin-bottom: 5px;"></div>
+
+     </button>
+     <button id="button1"  onclick="display1()" style="border: thin; background-color: transparent; transform: rotate(90deg); display: none;">
+        <div style="width: 50px; height: 10px; background-color: black; margin-bottom: 5px;"></div>
+        <div style="width: 50px; height: 10px; background-color: black; margin-bottom: 5px;"></div>
+        <div style="width: 50px; height: 10px; background-color: black; margin-bottom: 5px;"></div>
+
+     </button>
+     <div id="items" style="line-height: 2; position: fixed; background-color: black; transform: translate(-800px); transition: 1s ease-in-out; width: 300px; height: 300px;">
+        <li style="list-style: none;"><a href="home.html" style=" font-size: 30px; padding: 10px; text-decoration: none; color: white;">Home</a></li style="list-style: none;">
+            <li style="list-style: none;"><a href="#" style="color: rgb(255, 255, 255); text-decoration: none; font-size: 30px; padding: 10px;">Contact</a></li>
+            <li style="list-style: none;"><a href="help.html" style="color: rgb(241, 241, 241); text-decoration: none; font-size: 30px; padding: 10px;">Help</a></li>
+            <li style="list-style: none;"><a href="news.html" style="color: rgb(255, 255, 255); text-decoration: none; font-size: 30px; padding: 10px;">News</a></li>
+            <li style="list-style: none;"><a href="photos.html" style="color: rgb(255, 255, 255); text-decoration: none; font-size: 30px; padding: 10px;">photos</a></li>
+     </div>
+</div>
+<script>
+    function display(){
+        document.getElementById("items").style.transform = 'translate(0px)';
+        document.getElementById("button").style.display = 'none';
+        document.getElementById("button1").style.display = 'block'
+    }
+    function display1(){
+        document.getElementById("items").style.transform = 'translate(-800px)';
+        document.getElementById("button1").style.display= 'none';
+        document.getElementById('button').style.display = 'block';
+    }
+</script>
+<div style="margin-left: 30%; margin-bottom: 5px; display: flex; border: thin solidb transparent;">
+    <input type="text" placeholder="Search Goods you want.." style="padding: 30px; width: 300px; border: 2px solid black; border-radius: 20px;">
+    <button style="font-size: 30px; background-color: blue; border: thin; margin-top: 10px; margin-left: 3px; height: 60px; border-radius: 5px;"><a href="loading.html" style="color: white; text-decoration: none;">Search</a></button>
+</div>
+<div style="display: flex; flex-wrap: wrap;">
+    <div style="border: 2px solid black; margin-right: 20px; width: 350px;">
+        <h1 style="text-align: center;">winne</h1>
+        <img src="./best images/AdobeStock_568486656_Preview.jpeg" alt="" style="width: 300px; margin-left:5% ; margin-top: 1px;"  >
+        <p style="font-size: 20px; margin-left: 5%;">Cost: $25 <pre></pre><p style="margin-left: 5%; font-size: 20px;">call:+250793242447</p></p>
+        <button style=" margin-left: 5%; margin-bottom: 3px; background-color: blue; border: thin; padding: 20px; width: 300px;"><a href="loading.html" style="color: white; text-decoration: none;">Buy Now</a></button>
+    </div>
+
+
+
+    <div style="border: 2px solid black; margin-right: 20px; width: 350px;">
+        <h1 style="text-align: center;">Shoes</h1>
+        <img src="./best images/er.PNG" alt="" style="width: 300px; margin-left:5% ; margin-top: 1px;"  >
+        <p style="font-size: 20px; margin-left: 5%;">Cost: $12 <pre></pre><p style="margin-left: 5%; font-size: 20px;">call:+250793242447</p></p>
+        <button style=" margin-left: 5%; margin-bottom: 3px; background-color: blue; border: thin; padding: 20px; width: 300px;"><a href="loading.html" style="color: white; text-decoration: none;">Buy Now</a></button>
+    </div>
+    
+    <div style="border: 2px solid black; margin-right: 20px; width: 350px;">
+        <h1 style="text-align: center;">Car</h1>
+        <img src="./best images/439490.jpg" alt="" style="width: 300px; margin-left:5% ; margin-top: 1px;"  >
+        <p style="font-size: 20px; margin-left: 5%;">Cost: $120 <pre></pre><p style="margin-left: 5%; font-size: 20px;">call:+250793242447</p></p>
+        <button style=" margin-left: 5%; margin-bottom: 3px; background-color: blue; border: thin; padding: 20px; width: 300px;"><a href="loading.html" style="color: white; text-decoration: none;">Buy Now</a></button>
+    </div>
+    <div style="border: 2px solid black; margin-right: 20px; width: 350px;">
+        <h1 style="text-align: center;">Lamp</h1>
+        <img src="./best images/851532-wallpaper-pc-desktop-1920x1200-pictures.jpg" alt="" style="width: 300px; margin-left:5% ; margin-top: 1px;"  >
+        <p style="font-size: 20px; margin-left: 5%;">Cost: $7 <pre></pre><p style="margin-left: 5%; font-size: 20px;">call:+250793242447</p></p>
+        <button style=" margin-left: 5%; margin-bottom: 3px; background-color: blue; border: thin; padding: 20px; width: 300px;"><a href="loading.html" style="color: white; text-decoration: none;">Buy Now</a></button>
+    </div>
+
+
+
+    <div style="border: 2px solid black; margin-right: 20px; width: 350px;">
+        <h1 style="text-align: center;">Soldiers Clothes</h1>
+        <img src="./best images/851758-full-size-wallpaper-pc-desktop-1920x1080.jpg" alt="" style="width: 300px; margin-left:5% ; margin-top: 1px;"  >
+        <p style="font-size: 20px; margin-left: 5%;">Cost: $14 <pre></pre><p style="margin-left: 5%; font-size: 20px;">call:+250793242447</p></p>
+        <button style=" margin-left: 5%; margin-bottom: 3px; background-color: blue; border: thin; padding: 20px; width: 300px;"><a href="loading.html" style="color: white; text-decoration: none;">Buy Now</a></button>
+    </div>
+    
+    <div style="border: 2px solid black; margin-right: 20px;  width: 350px;">
+        <h1 style="text-align: center;">Computer</h1>
+        <img src="./best images/1675528-keyboard-wallpaper.jpg" alt="" style="width: 300px; margin-left:5% ; margin-top: 1px;"  >
+        <p style="font-size: 20px; margin-left: 5%;">Cost: $80 <pre></pre><p style="margin-left: 5%; font-size: 20px;">call:+250793242447</p></p>
+        <button style=" margin-left: 5%; margin-bottom: 3px; background-color: blue; border: thin; padding: 20px; width: 300px;"><a href="loading.html" style="color: white; text-decoration: none;">Buy Now</a></button>
+    </div>
+    <div style="border: 2px solid black; margin-right: 20px; width: 350px;">
+        <h1 style="text-align: center;">Window 10 Pc</h1>
+        <img src="./best images/122666-free-wallpapers-for-windows-10-2560x1600-for-1080p.jpg" alt="" style="width: 300px; margin-left:5% ; margin-top: 1px;"  >
+        <p style="font-size: 20px; margin-left: 5%;">Cost: $150 <pre></pre><p style="margin-left: 5%; font-size: 20px;">call:+250793242447</p></p>
+        <button style=" margin-left: 5%; margin-bottom: 3px; background-color: blue; border: thin; padding: 20px; width: 300px;"><a href="loading.html" style="color: white; text-decoration: none;">Buy Now</a></button>
+    </div>
+
+
+
+    <div style="border: 2px solid black; margin-right: 20px; width: 350px;">
+        <h1 style="text-align: center;">Heart</h1>
+        <img src="./best images/14989.jpg" alt="" style="width: 300px; margin-left:5% ; margin-top: 1px;"  >
+        <p style="font-size: 20px; margin-left: 5%;">Cost: $12 <pre></pre><p style="margin-left: 5%; font-size: 20px;">call:+250793242447</p></p>
+        <button style=" margin-left: 5%; margin-bottom: 3px; background-color: blue; border: thin; padding: 20px; width: 300px;"><a href="loading.html" style="color: white; text-decoration: none;">Buy Now</a></button>
+    </div>
+    
+    <div style="border: 2px solid black; margin-right: 20px; width: 350px;">
+        <h1 style="text-align: center;">Ball</h1>
+        <img src="./best images/4b663842b8f7847a14e179d97ff26005.jpg" alt="" style="width: 300px; margin-left:5% ; margin-top: 1px;"  >
+        <p style="font-size: 20px; margin-left: 5%;">Cost: $120 <pre></pre><p style="margin-left: 5%; font-size: 20px;">call:+250793242447</p></p>
+        <button style=" margin-left: 5%; margin-bottom: 3px; background-color: blue; border: thin; padding: 20px; width: 300px;"><a href="loading.html" style="color: white; text-decoration: none;">Buy Now</a></button>
+    </div>
+    <div style="border: 2px solid black; margin-right: 20px; width: 350px;">
+        <h1 style="text-align: center;">Gun</h1>
+        <img src="./best images/127916-amazing-1080p-gaming-wallpapers-2400x1350.jpg" alt="" style="width: 300px; margin-left:5% ; margin-top: 1px;"  >
+        <p style="font-size: 20px; margin-left: 5%;">Cost: $10 <pre></pre><p style="margin-left: 5%; font-size: 20px;">call:+250793242447</p></p>
+        <button style=" margin-left: 5%; margin-bottom: 3px; background-color: blue; border: thin; padding: 20px; width: 300px;"><a href="loading.html" style="color: white; text-decoration: none;">Buy Now</a></button>
+    </div>
+    <div style="border: 2px solid black; margin-right: 20px; width: 350px;">
+        <h1 style="text-align: center;">Gun</h1>
+        <img src="./best images/127916-amazing-1080p-gaming-wallpapers-2400x1350.jpg" alt="" style="width: 300px; margin-left:5% ; margin-top: 1px;"  >
+        <p style="font-size: 20px; margin-left: 5%;">Cost: $10 <pre></pre><p style="margin-left: 5%; font-size: 20px;">call:+250793242447</p></p>
+        <button style=" margin-left: 5%; margin-bottom: 3px; background-color: blue; border: thin; padding: 20px; width: 300px;"><a href="loading.html" style="color: white; text-decoration: none;">Buy Now</a></button>
+    </div>
+
+
+
+    <div style="border: 2px solid black; margin-right: 20px; width: 350px;">
+        <h1 style="text-align: center;">Best Car</h1>
+        <img src="./best images/127920-1080p-gaming-wallpapers-1920x1080-for-phones.jpg" alt="" style="width: 300px; margin-left:5% ; margin-top: 1px;"  >
+        <p style="font-size: 20px; margin-left: 5%;">Cost: $240 <pre></pre><p style="margin-left: 5%; font-size: 20px;">call:+250793242447</p></p>
+        <button style=" margin-left: 5%; margin-bottom: 3px; background-color: blue; border: thin; padding: 20px; width: 300px;"><a href="loading.html" style="color: white; text-decoration: none;">Buy Now</a></button>
+    </div>
+    
+    <div style="border: 2px solid black; margin-right: 20px;  width: 350px;">
+        <h1 style="text-align: center;">Basketball Movie</h1>
+        <img src="./best images/406287.jpg" alt="" style="width: 300px; margin-left:5% ; margin-top: 1px;"  >
+        <p style="font-size: 20px; margin-left: 5%;">Cost: $1 <pre></pre><p style="margin-left: 5%; font-size: 20px;">call:+250793242447</p></p>
+        <button style=" margin-left: 5%; margin-bottom: 3px; background-color: blue; border: thin; padding: 20px; width: 300px;"><a href="loading.html" style="color: white; text-decoration: none;">Buy Now</a></button>
+    </div>
+    <div style="border: 2px solid black; margin-right: 20px; width: 350px;">
+        <h1 style="text-align: center;">Battle Movie</h1>
+        <img src="./best images/1339287.jpg" alt="" style="width: 300px; margin-left:5% ; margin-top: 1px;"  >
+        <p style="font-size: 20px; margin-left: 5%;">Cost: $1 <pre></pre><p style="margin-left: 5%; font-size: 20px;">call:+250793242447</p></p>
+        <button style=" margin-left: 5%; margin-bottom: 3px; background-color: blue; border: thin; padding: 20px; width: 300px;"><a href="loading.html" style="color: white; text-decoration: none;">Buy Now</a></button>
+    </div>
+
+
+
+    <div style="border: 2px solid black; margin-right: 20px; width: 350px;">
+        <h1 style="text-align: center;">Leaf</h1>
+        <img src="./best images/243-2438350_snow-wallpaper-wallpapers-for-free-download-about-wallpapers.jpg" alt="" style="width: 300px; margin-left:5% ; margin-top: 1px;"  >
+        <p style="font-size: 20px; margin-left: 5%;">Cost: $2 <pre></pre><p style="margin-left: 5%; font-size: 20px;">call:+250793242447</p></p>
+        <button style=" margin-left: 5%; margin-bottom: 3px; background-color: blue; border: thin; padding: 20px; width: 300px;"><a href="loading.html" style="color: white; text-decoration: none;">Buy Now</a></button>
+    </div>
+    
+    <div style="border: 2px solid black; margin-right: 20px;  width: 350px;">
+        <h1 style="text-align: center;">Ghost</h1>
+        <img src="./best images/084c951c772a87eb599724411b34f2a5.jpg" alt="" style="width: 300px; margin-left:5% ; margin-top: 1px;"  >
+        <p style="font-size: 20px; margin-left: 5%;">Cost: Life <pre></pre><p style="margin-left: 5%; font-size: 20px;">call:+250793242447</p></p>
+        <button style=" margin-left: 5%; margin-bottom: 3px; background-color: blue; border: thin; padding: 20px; width: 300px;"><a href="loading.html" style="color: white; text-decoration: none;">Buy Now</a></button>
+    </div>
+
+    
+    <div style="border: 2px solid black; margin-right: 20px; width: 350px;">
+        <h1 style="text-align: center;">Wall Paper</h1>
+        <img src="./best images/127920-1080p-gaming-wallpapers-1920x1080-for-phones.jpg" alt="" style="width: 300px; margin-left:5% ; margin-top: 1px;"  >
+        <p style="font-size: 20px; margin-left: 5%;">Cost: $2 <pre></pre><p style="margin-left: 5%; font-size: 20px;">call:+250793242447</p></p>
+        <button style=" margin-left: 5%; margin-bottom: 3px; background-color: blue; border: thin; padding: 20px; width: 300px;"><a href="loading.html" style="color: white; text-decoration: none;">Buy Now</a></button>
+    </div>
+    
+    <div style="border: 2px solid black; margin-right: 20px; width: 350px;">
+        <h1 style="text-align: center;">Leaf</h1>
+        <img src="./best images/243-2438350_snow-wallpaper-wallpapers-for-free-download-about-wallpapers.jpg" alt="" style="width: 300px; margin-left:5% ; margin-top: 1px;"  >
+        <p style="font-size: 20px; margin-left: 5%;">Cost: $2 <pre></pre><p style="margin-left: 5%; font-size: 20px;">call:+250793242447</p></p>
+        <button style=" margin-left: 5%; margin-bottom: 3px; background-color: blue; border: thin; padding: 20px; width: 300px;"><a href="loading.html" style="color: white; text-decoration: none;">Buy Now</a></button>
+    </div>
+    
+    <div style="border: 2px solid black; margin-right: 20px;  width: 350px;">
+        <h1 style="text-align: center;">Sort</h1>
+        <img src="./best images/16258.jpg" alt="" style="width: 300px; margin-left:5% ; margin-top: 1px;"  >
+        <p style="font-size: 20px; margin-left: 5%;">Cost: Life <pre></pre><p style="margin-left: 5%; font-size: 20px;">call:+250793242447</p></p>
+        <button style=" margin-left: 5%; margin-bottom: 3px; background-color: blue; border: thin; padding: 20px; width: 300px;"><a href="loading.html" style="color: white; text-decoration: none;">Buy Now</a></button>
+    </div>
+
+    
+    <div style="border: 2px solid black; margin-right: 20px; width: 350px;">
+        <h1 style="text-align: center;">Ninja mask</h1>
+        <img src="./best images/3626989.jpg" alt="" style="width: 300px; margin-left:5% ; margin-top: 1px;"  >
+        <p style="font-size: 20px; margin-left: 5%;">Cost: $6 <pre></pre><p style="margin-left: 5%; font-size: 20px;">call:+250793242447</p></p>
+        <button style=" margin-left: 5%; margin-bottom: 3px; background-color: blue; border: thin; padding: 20px; width: 300px;"><a href="loading.html" style="color: white; text-decoration: none;">Buy Now</a></button>
+    </div>
+    
+    <div style="border: 2px solid black; margin-right: 20px;  width: 350px;">
+        <h1 style="text-align: center;">Best Ball</h1>
+        <img src="./best images/820969.jpg" alt="" style="width: 300px; margin-left:5% ; margin-top: 1px;"  >
+        <p style="font-size: 20px; margin-left: 5%;">Cost:6 <pre></pre><p style="margin-left: 5%; font-size: 20px;">call:+250793242447</p></p>
+        <button style=" margin-left: 5%; margin-bottom: 3px; background-color: blue; border: thin; padding: 20px; width: 300px;"><a href="loading.html" style="color: white; text-decoration: none;">Buy Now</a></button>
+    </div>
+
+</div>
+<footer style="column-count: 3; background-color: black;">
+    <div style="color: white;"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis reprehenderit at, exercitationem similique quia dolore iure ab voluptate sapiente. Tenetur qui vitae sint ut incidunt enim laborum ullam eum quisquam?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ratione consectetur itaque modi, assumenda porro molestiae? Velit vero temporibus minus autem repellat ab dolores, vel maiores culpa, laborum delectus obcaecati.
+    </i></div>
+    <div style="color: white;"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis reprehenderit at, exercitationem similique quia dolore iure ab voluptate sapiente. Tenetur qui vitae sint ut incidunt enim laborum ullam eum quisquam?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ratione consectetur itaque modi, assumenda porro molestiae? Velit vero temporibus minus autem repellat ab dolores, vel maiores culpa, laborum delectus obcaecati.
+    </i></div>
+    <div style="color: white;"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis reprehenderit at, exercitationem similique quia dolore iure ab voluptate sapiente. Tenetur qui vitae sint ut incidunt enim laborum ullam eum quisquam?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ratione consectetur itaque modi, assumenda porro molestiae? Velit vero temporibus minus autem repellat ab dolores, vel maiores culpa, laborum delectus obcaecati.
+    </i></div>
+</footer>
+<button style="width: 100%; padding: 100px; background-color: rgb(49, 4, 4);"><a href="home.html" style="color: white; text-decoration: none; font-size: 40px;">Back_to_top</a></button>
+   
+</body>
+</html>
